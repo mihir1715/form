@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>online@form</title>
+        <link rel="stylesheet" href="mihir.css"/>
+    </head>
+    <body>
+        <h1> Form For Chazerexpert</h1>
+        <form name="form" onsubmit="return validation()">
+            <input id="firstName" type="text" placeholder="Enter First name" onkeypress="return check()" autofocus/>
+            <label id="fn"></label><br>
+            <input id="lastName" type="text" placeholder="Enter Last name" onkeypress="return check()" />
+            <label id="ln"></label><br>
+            <input id="fatherName" type="text" placeholder="Enter Father name" onkeypress="return check()"/>
+            <label id="fan"></label><br>
+            <input id="motherName" type="text" placeholder="Enter Mother name" onkeypress="return check()"/>
+            <label id="mn"></label><br>
+            <input id="phoneNo" type="number" placeholder="Enter Phone no." />
+            <label id="phn"></label><br>
+            <input id="emailId" type="text" placeholder="Enter Email Id" />
+            <label id="em"></label><br>
+            D.O.B:<br>
+            <input id="date" type="date"/>
+            <label id="dob"></label><br>
+            Designation:<br>
+            <select id="Designation">
+                <option value="">--select--</option>
+                <option>HR</option>
+                <option>Technical</option>
+                <option>Accounts</option>
+                <option>Financial</option>
+                <option>Sales</option>
+            </select>
+            <label id="des"></label><br>
+            Resume:<br>
+            <input id="resume" type="file" name="file" accept=".docx, .pdf"/>
+            <label id="res"></label><br>
+            <table>
+                <tr>
+                    <td><button id="bt1" type="submit">Submit</button></td>
+                    <td><button id="bt2" type="reset" onclick="reset1()">Reset</button></td>
+                </tr>
+            </table>
+        </form><br>
+        <p id="print"></p>
+    </body>
+    <script type="text/javascript" src="mihir.js"></script>
+</html>
